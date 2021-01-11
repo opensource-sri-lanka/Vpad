@@ -43,17 +43,18 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.panel1 = new System.Windows.Forms.Panel();
             this.font_down_button = new System.Windows.Forms.PictureBox();
             this.font_up_button = new System.Windows.Forms.PictureBox();
             this.time_label = new System.Windows.Forms.Label();
             this.TimeLabel = new System.Windows.Forms.Label();
             this.CharCounter = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.font_down_button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.font_up_button)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -134,7 +135,7 @@
             // discordIntegrationToolStripMenuItem
             // 
             this.discordIntegrationToolStripMenuItem.Name = "discordIntegrationToolStripMenuItem";
-            this.discordIntegrationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.discordIntegrationToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.discordIntegrationToolStripMenuItem.Text = "Discord Integration";
             this.discordIntegrationToolStripMenuItem.Click += new System.EventHandler(this.DiscordIntegrationToolStripMenuItem_Click);
             // 
@@ -149,7 +150,7 @@
             this.textbox.Margin = new System.Windows.Forms.Padding(0);
             this.textbox.Name = "textbox";
             this.textbox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.textbox.Size = new System.Drawing.Size(800, 422);
+            this.textbox.Size = new System.Drawing.Size(800, 387);
             this.textbox.TabIndex = 1;
             this.textbox.Text = "";
             // 
@@ -160,10 +161,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // printDialog1
-            // 
-            this.printDialog1.UseEXDialog = true;
             // 
             // panel1
             // 
@@ -248,6 +245,16 @@
             this.CharCounter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CharCounter.Click += new System.EventHandler(this.CharCounter_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.textbox);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(0, 28, 0, 35);
+            this.panel2.Size = new System.Drawing.Size(800, 450);
+            this.panel2.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -255,8 +262,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textbox);
             this.Controls.Add(this.menuStrip);
+            this.Controls.Add(this.panel2);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Form1";
             this.RightToLeftLayout = true;
@@ -268,6 +275,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.font_down_button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.font_up_button)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,7 +296,6 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutVPadToolStripMenuItem;
-        private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label CharCounter;
         private System.Windows.Forms.Label TimeLabel;
@@ -297,5 +304,6 @@
         private System.Windows.Forms.PictureBox font_down_button;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem discordIntegrationToolStripMenuItem;
+        private System.Windows.Forms.Panel panel2;
     }
 }
