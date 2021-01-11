@@ -120,7 +120,7 @@
             // aboutVPadToolStripMenuItem
             // 
             this.aboutVPadToolStripMenuItem.Name = "aboutVPadToolStripMenuItem";
-            this.aboutVPadToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+            this.aboutVPadToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.aboutVPadToolStripMenuItem.Text = "About vPad";
             this.aboutVPadToolStripMenuItem.Click += new System.EventHandler(this.AboutVPadToolStripMenuItem_Click);
             // 

@@ -67,7 +67,7 @@ namespace vPad
 
         private void AboutVPadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // TODO: add more info about vpad
+            System.Diagnostics.Process.Start("https://github.com/flew-software/Vpad");
         }
 
         private void FontSizeToolStripMenuItem_Click(object sender, EventArgs e)
