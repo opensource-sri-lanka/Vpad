@@ -133,6 +133,12 @@ namespace vPad
             {
                 Details = "Vpad - A light weight text editor for the 21st century",
                 State = "Editing " + fileName,
+                Assets = new DiscordRPC.Assets()
+                {
+                    LargeImageKey = "vpadlogo",
+                    LargeImageText = "Vpad",
+                },
+                Timestamps = new DiscordRPC.Timestamps(DateTime.Now.ToUniversalTime()),
             });
         }
     }
